@@ -1,3 +1,3 @@
-#INTREGRANTES
+**INTREGANTES**
 
-##Ricardo Avelino Madera Berrocal y Jorge Carlos Martínez Pastrana
+Ricardo Avelino Madera Berrocal y Jorge Carlos Martínez Pastrana
