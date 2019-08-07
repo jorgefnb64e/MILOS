@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "8e0f8068-ef1b-452b-9483-cb150386ded4",
+		"name": "ProyectoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CrearCarnet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"carnet\": {\n\t\t \"codigo_qr\": \"567898654\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/estudiantes/5d47abd80d09b409d8fa39d9/generar-carnet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudiantes",
+						"5d47abd80d09b409d8fa39d9",
+						"generar-carnet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerEstudiantes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"carnet\": {\n\t\t \"codigo_qr\": \"3456785\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/estudiantes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudiantes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerCarnets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/carnets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carnets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearVendedor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"vendedor\": {\n\t\t\"nombre_1\": \"Ricardo\",\n\t\t\"nombre_2\": \"Milos\",\n\t\t\"apellido_1\": \"Madeira\",\n\t\t\"apellido_2\": \"Dos Santos\",\n\t\t\"cedula\": \"4567890232\",\n\t\t\"telefono\": \"3009875678\",\n\t\t\"direccion\": \"La Gallera #18\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/vendedor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vendedor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerVendedores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/vendedor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vendedor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearFicho",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ficho\": {\n\t\t\"codigo\": \"5697\",\n\t\t\"fecha\": \"31-07-2019\",\n\t\t\"valor\": 1000\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/vendedor/5d47c1b9be742b2f5ccd8048/carnets/5d47c5a3f44e8c1f387c902f/generar-ficho",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vendedor",
+						"5d47c1b9be742b2f5ccd8048",
+						"carnets",
+						"5d47c5a3f44e8c1f387c902f",
+						"generar-ficho"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerFicho",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/fichos/5d47c5c3f44e8c1f387c9030",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"fichos",
+						"5d47c5c3f44e8c1f387c9030"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
